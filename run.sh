@@ -1,3 +1,5 @@
+export KUBE_BUILD_PLATFORMS="linux/amd64"
+
 DELETE_INSTANCES=true \
   FOCUS=NodeConformance \
   IMAGE_CONFIG_FILE=aws-instance.yaml \
