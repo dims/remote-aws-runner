@@ -15,6 +15,7 @@
 # limitations under the License.
 
 KUBE_ROOT=$(dirname "${BASH_SOURCE[0]}")/../../../kubernetes
+export KUBE_ROOT=$(realpath "${KUBE_ROOT}")
 
 # start the cache mutation detector by default so that cache mutators will be found
 KUBE_CACHE_MUTATION_DETECTOR="${KUBE_CACHE_MUTATION_DETECTOR:-true}"
